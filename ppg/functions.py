@@ -8,4 +8,4 @@ def power(x,y):
     return x**y
 
 def test():
-    print('ppack works')
+    print('ppg package works')
