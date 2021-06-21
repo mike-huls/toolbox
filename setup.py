@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='ppg',
-    version='0.0.1',
+    version='0.2.0',
     description='Testing installation of Package',
     # py_modules=["ppack"],
     # package_dir={'': '.'},
