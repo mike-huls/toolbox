@@ -1,0 +1,15 @@
+1. Create a venv
+Ref to article. Don't forget the gitignore, otherwise our package will be huge
+
+2. Check the structure of our project
+setup.py        Makes sure we can install the package with pip install
+__init__.py
+LICENSE         Tells users the terms under which they can use the package
+README          Long description of this package
+toolbox                 This folder contains our package
+toolbox/__init__.py     Required to import the folder as a package
+toolbox/decorator.py    File that contains some handy decorators
+toolbox/functions.py    File that contains some handy functions
+
+3. Content
+

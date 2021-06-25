@@ -1,18 +1,24 @@
 # Ensures that we can install a package with pip install package
 
-from setuptools import setup
+import setuptools
 
-setup(
-    name='ppg',
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name='toolbox',
     version='0.2',
-    description='Testing installation of Package',
-    # py_modules=["ppack"],
-    # package_dir={'': '.'},
-    url='#',
     author='Mike Huls',
     author_email='mike_huls@hotmail.com',
+
+    description='Testing installation of Package',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/Muls/toolbox',
+    project_urls = {
+        "Bug Tracker": "https://github.com/Muls/toolbox/issues"
+    },
     license='MIT',
-    packages=['ppg'], # same as name
-    zip_safe=False,
-    install_requires=['wheel', 'requests'],  # external packages as dependencies
+    packages=['toolbox'],
+    install_requires=['requests'],
 )
