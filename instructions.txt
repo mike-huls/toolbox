@@ -1,3 +1,15 @@
+
+Why use a python package?
+Make your code available for others.
+public and private repositories
+version control of changes in your package
+forces decoupled code
+users of your package are able to install updates easily
+Single souce of the truth: code and documentation in one place (repository).
+    This is better than having the code on multiple machines with no possibility of knowing which is more up to date
+
+
+
 1. Create a venv
 Ref to article. Don't forget the gitignore, otherwise our package will be huge
 
