@@ -13,7 +13,7 @@ pip install git+https://github.com/Muls/toolbox
 ## Usage
 Features:
 * functions.listChunker  --> generator that chunks and interable in evenly sized chunks 
-* functions.weirCase    --> converts a string to an unreadable format
+* functions.weirdCase    --> converts a string to an unreadable format
 * functions.report      --> prints to the console with a timestamp
 * decorators.singleton  --> used for decoratint your class to make it a singleton
 
