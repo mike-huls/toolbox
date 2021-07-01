@@ -13,11 +13,15 @@ pip install git+https://github.com/Muls/toolbox
 ## Usage
 
 ```python
-import foobar
+import toolbox
+from toolbox import report
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+camelcase_word = toolbox.functions.weirdCase("WORKING")
+report(f"Toolbox is {camelcase_word}!")
+
+foobar.pluralize('word')  # returns 'words'
+foobar.pluralize('goose')  # returns 'geese'
+foobar.singularize('phenomena')  # returns 'phenomenon'
 ```
 
 ## Contributing

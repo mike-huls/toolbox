@@ -2,14 +2,24 @@
 Ref to article. Don't forget the gitignore, otherwise our package will be huge
 
 2. Check the structure of our project
-setup.py        Makes sure we can install the package with pip install
-__init__.py
-LICENSE         Tells users the terms under which they can use the package
-README          Long description of this package
+setup.py                Makes sure we can install the package with pip install
+__init__.py             Makes sure that our folder is a python package.
+LICENSE                 Tells users the terms under which they can use the package
+README                  Long description of this package
 toolbox                 This folder contains our package
-toolbox/__init__.py     Required to import the folder as a package
+toolbox/__init__.py     Required to import the folder as a package. Also we can make sure to import lazily
+                            -> from toolbox import report instead of from toolbox.function import report
 toolbox/decorator.py    File that contains some handy decorators
 toolbox/functions.py    File that contains some handy functions
 
 3. Content
+setup.py
+    - name              The name of this package
+    - version           Increment this. People who have it installed will update it if this version is larger thatn their owns
+    - packages          Same as the name
+    - install_requires  List of all the packages that this package depends on. IN our case "toolbox" needs "requests"
 
+
+4. Get it working
+pip install git+https://github.com/Muls/toolbox.git
+THis will install our package and all of our requirements
