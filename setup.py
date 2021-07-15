@@ -1,5 +1,3 @@
-# Ensures that we can install a package with pip install package
-
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
@@ -10,7 +8,6 @@ setuptools.setup(
     version='0.0.3',
     author='Mike Huls',
     author_email='mike_huls@hotmail.com',
-
     description='Testing installation of Package',
     long_description=long_description,
     long_description_content_type="text/markdown",
